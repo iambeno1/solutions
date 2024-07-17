@@ -2,6 +2,8 @@
 Berikut adalah masalah-masalah yang mungkin ditemukan saat menggunakan XAMPP dan cara menyelesaikannya (_Berdasarkan pengalaman pribadi_)
 
 ## ERROR : MySQL shutdown unexpectedly
+![image](https://github.com/user-attachments/assets/92532e8c-d5a5-43ff-816f-93c37d875f32)
+
 Berikut adalah cara mengatasi error "MySQL shutdown unexpectedly" pada XAMPP:
 
 ---
