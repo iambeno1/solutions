@@ -1,0 +1,9 @@
+XAMPP ERROR SOLUTIONS:
+
+1. Error : MySQL shutdown unexpectedly
+	- buka xampp
+	- gunakan shell xampp
+	- ketik perintah lalu enter: mysqld --console --skip-grant-tables --skip-external-locking
+	- minimize shell tersebut, lalu buka lagi shell baru dari xampp
+	- ketik perintah : mysqlcheck -r --database mysql --use-frm
+	- terakhir coba start mysql, berhasil
