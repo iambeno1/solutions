@@ -1,5 +1,5 @@
 # Problems
-repo untuk menyimpan penyelesaian masalah yg dialami seputar coding
+Berikut adalah masalah-masalah yang mungkin ditemukan saat menggunakan Git dan GitHub dan cara menyelesaikannya (_Berdasarkan pengalaman pribadi_)
 
 ## ERROR : refusing to merge unrelated histories
 Pesan kesalahan "refusing to merge unrelated histories" biasanya terjadi karena repositori lokal Anda dan repositori remote tidak memiliki sejarah commit yang sama. Ini bisa terjadi jika Anda menginisialisasi repositori lokal secara terpisah dari repositori remote.
