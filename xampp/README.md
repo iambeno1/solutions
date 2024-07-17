@@ -1,19 +1,37 @@
 # Problems
-Berikut adalah masalah-masalah yang mungkin ditemukan saat menggunakan Git dan GitHub dan cara menyelesaikannya (_Berdasarkan pengalaman pribadi_)
+Berikut adalah masalah-masalah yang mungkin ditemukan saat menggunakan XAMPP dan cara menyelesaikannya (_Berdasarkan pengalaman pribadi_)
 
-## ERROR : refusing to merge unrelated histories
-Pesan kesalahan "refusing to merge unrelated histories" biasanya terjadi karena repositori lokal Anda dan repositori remote tidak memiliki sejarah commit yang sama. Ini bisa terjadi jika Anda menginisialisasi repositori lokal secara terpisah dari repositori remote.
+## ERROR : MySQL shutdown unexpectedly
+Berikut adalah cara mengatasi error "MySQL shutdown unexpectedly" pada XAMPP:
 
-Untuk mengatasi masalah ini, Anda bisa menggunakan opsi `--allow-unrelated-histories` saat melakukan `git pull`. Berikut adalah langkah-langkah yang bisa Anda ikuti:
+---
 
-1. **Tarik perubahan dari repositori remote dengan opsi `--allow-unrelated-histories`:**
-   ```sh
-   git pull origin main --allow-unrelated-histories
-   ```
+**Solusi untuk Error "MySQL shutdown unexpectedly" pada XAMPP:**
 
-2. **Selanjutnya, dorong perubahan lokal Anda ke repositori remote:**
-   ```sh
-   git push -u origin main
-   ```
+1. **Buka XAMPP Control Panel:**
+   - Jalankan aplikasi XAMPP di komputer Anda.
 
-Langkah-langkah tersebut seharusnya memungkinkan Anda untuk menggabungkan sejarah commit dari kedua repositori dan kemudian melakukan push. Dan Berhasil.
+2. **Gunakan XAMPP Shell:**
+   - Klik tombol "Shell" pada XAMPP Control Panel untuk membuka command prompt (shell) XAMPP.
+
+3. **Jalankan MySQL tanpa grant tables dan external locking:**
+   - Ketik perintah berikut di shell XAMPP dan tekan Enter:
+     ```sh
+     mysqld --console --skip-grant-tables --skip-external-locking
+     ```
+   - Ini akan menjalankan MySQL tanpa mengecek grant tables dan external locking. Jangan tutup jendela shell ini, cukup minimalkan.
+
+4. **Buka Shell Baru di XAMPP:**
+   - Buka shell baru dengan mengklik tombol "Shell" lagi pada XAMPP Control Panel.
+
+5. **Perbaiki Database MySQL:**
+   - Di shell baru, ketik perintah berikut dan tekan Enter:
+     ```sh
+     mysqlcheck -r --databases mysql --use-frm
+     ```
+   - Perintah ini akan memeriksa dan memperbaiki tabel di database `mysql` menggunakan file `.frm`.
+
+6. **Mulai Ulang MySQL:**
+   - Kembali ke XAMPP Control Panel dan coba klik tombol "Start" pada MySQL. MySQL seharusnya sekarang bisa berjalan dengan normal.
+
+---
