@@ -37,3 +37,16 @@ Berikut adalah cara mengatasi error "MySQL shutdown unexpectedly" pada XAMPP:
    - Kembali ke XAMPP Control Panel dan coba klik tombol "Start" pada MySQL. MySQL seharusnya sekarang bisa berjalan dengan normal.
 
 ---
+## ERROR : MySQL shutdown unexpectedly (Cara 2)
+nonton ini <a href="https://www.youtube.com/watch?v=84IOtc05TuA">youtube</a> <br><br>
+langkah 1: hapus semua file yg dipilih (ikut jalur direktori yg sesuai)<br><br>
+![image](https://github.com/user-attachments/assets/4c509254-a724-4af6-948b-09762cfdbb66)
+
+langkah 2: setelah semuanya dihapus, sekarang tinggal ambil (Copy) file dari direktori backup dan paste di dalam direktori data<br><br>
+![image](https://github.com/user-attachments/assets/1515792e-eb35-4989-9bc8-2be4f02fa454)
+
+paste disini:
+![image](https://github.com/user-attachments/assets/defde1be-785e-4aca-a2d7-b2abf35104b8)
+
+
+
