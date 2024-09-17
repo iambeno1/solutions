@@ -17,3 +17,4 @@ Untuk mengatasi masalah ini, Anda bisa menggunakan opsi `--allow-unrelated-histo
    ```
 
 Langkah-langkah tersebut seharusnya memungkinkan Anda untuk menggabungkan sejarah commit dari kedua repositori dan kemudian melakukan push. Dan Berhasil.
+
