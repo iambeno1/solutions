@@ -11,3 +11,5 @@ langkah-langkah: <br>
 
 6. pastikan semua path sudah dilengkapi dengan benar (poin no 5) kemudian save file tersebut lalu restart xampp/cmd. untuk memasitkannya dapat mengeceknya lewat terminal dengan perintah php -v. SELESAI
 
+referensi : <a href="https://www.youtube.com/watch?v=CnIXzKJqCqs">youtube</a>
+
